@@ -1,86 +1,364 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./public/styles/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./public/styles/style.css" />
     <title>Introdução Bootstrap</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Introdução Bootstrap -->
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">LOGO</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contato</a>
-              </li>
-
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
-          </div>
-        </div>
-      </nav>    
-
-      <!-- Fim Introdução Bootstrap -->
-
-      <!-- Introdução Carrossel -->
-
-      <div id="carouselCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://i.pinimg.com/originals/55/89/ac/5589ace1f586fb7c8e518f791868eb94.jpg" class="d-block w-100" alt="universe">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Universe</h5>
-              <p>Um pouco do universo!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/2745258/pexels-photo-2745258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="wallpaper-note">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Wallpaper Note</h5>
-              <p>Garanta a sua paisagem dos sonhos!</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://images.pexels.com/photos/1933320/pexels-photo-1933320.jpeg?cs=srgb&dl=pexels-therato-1933320.jpg&fm=jpg" class="d-block w-100" alt="wallpaper-boreal">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Wallpaper Boreal</h5>
-              <p>Traga a sensação aqui!</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5723/5723238.png"
+            alt="logo-hardware"
+            class="logo-hardware"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Próximo</span>
-        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+        </div>
       </div>
+    </nav>
 
+    <!-- Fim Introdução Bootstrap -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <!-- Introdução Carrossel -->
+
+    <div id="carouselCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://cdn.dooca.store/2147/files/download.jpg"
+            class="d-block w-100"
+            alt="keyboard gamer"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Teclado Gamer</h5>
+            <p>Melhor Custo-Benefício!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://wallpapers.com/images/hd/gaming-headsets-2912-x-1926-wallpaper-84xkb42dvdxq7bbg.jpg"
+            class="d-block w-100"
+            alt="headset gamer"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Headset Gamer</h5>
+            <p>Garanta já o seu!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://www.wepc.com/wp-content/uploads/2023/03/4K-gaming-laptop-best-4K-gaming-laptop-4K-laptop-for-gaming-UHD-gaming-laptop.jpg"
+            class="d-block w-100"
+            alt="note gamer"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Notebook Gamer</h5>
+            <p>Maior flexbilidade para jogos!</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+
+    <!-- Fim Introdução Carrossel -->
+
+    <!-- Introdução Grupo de Cards -->
+
+    <!-- Secão 1 -->
+
+    <nav
+      class="navbar bg-body-tertiary"
+      style="margin: 48px 0 0 0; height: 5rem"
+    >
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Processadores</span>
+      </div>
+    </nav>
+
+    <div id="carouselCards1" class="carousel slide">
+      <section class="pt-5 pb-10">
+        <div class="container">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card" style="width: 14rem">
+                    <img
+                      src="./public/img/img-amd-4.jpg"
+                      class="card-img-top"
+                      alt="ryzen 7 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Processador AMD Ryzen 7 5700X3D
+                      </h5>
+                      <p class="card-text">
+                        Maior processador da série Ryzen geração AM4, 3.6gHz
+                        (4.1gHz Max Turbo)
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 14rem">
+                    <img
+                      src="./public/img/img-amd-2.jpg"
+                      class="card-img-top"
+                      alt="ryzen 5 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Processador AMD Ryzen 5 5600</h5>
+                      <p class="card-text">
+                        Custo-Benefício 3.5GHz (4.4GHz Max Turbo), Cache 35MB,
+                        AM4
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 14rem">
+                    <img
+                      src="./public/img/img-amd-3.jpg"
+                      class="card-img-top"
+                      alt="ryzen 5 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Processador AMD Ryzen 5 5500</h5>
+                      <p class="card-text">
+                        Maior Custo-Benefício 3.6GHz (4.2GHz Max Turbo), Cache
+                        19MB, AM4
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 14rem">
+                    <img
+                      src="./public/img/img-amd-1.jpg"
+                      class="card-img-top"
+                      alt="ryzen 5 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Processador AMD Ryzen 5 4600G</h5>
+                      <p class="card-text">
+                        Custo-Benefício 3.7GHz (4.2GHz Max Turbo), Cache 11MB,
+                        AM4
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões de Carrossel de Cards -->
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselCards1"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselCards1"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Seção 2 -->
+
+    <nav
+      class="navbar bg-body-tertiary"
+      style="margin: 48px 0 0 0; height: 5rem"
+    >
+      <div class="container">
+        <span class="navbar-brand mb-0 h1">Placas de Vídeo</span>
+      </div>
+    </nav>
+
+    <section class="pt-5 pb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="card" style="width: 14rem">
+              <img
+                src="./public/img/img-gpu-1.jpg"
+                class="card-img-top"
+                alt="amd gpu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Placa de Vídeo RX 6600 CLD 8G ASRock AMD Radeon
+                </h5>
+                <p class="card-text">8GB, GDDR6 - 90-GA2RZZ-00UANF</p>
+                <a href="#" class="btn btn-primary">Comprar Agora!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 14rem">
+              <img
+                src="./public/img/img-gpu-2.jpg"
+                class="card-img-top"
+                alt="nvidia gpu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Placa de vídeo RTX 4060 ASUS</h5>
+                <p class="card-text">
+                  NVIDIA GeForce, 8GB GDDR6, G-SYNC, Ray Tracing
+                </p>
+                <a href="#" class="btn btn-primary">Comprar Agora!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 14rem">
+              <img
+                src="./public/img/img-gpu-3.jpg"
+                class="card-img-top"
+                alt="nvidia gpu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Placa de Vídeo RTX 4060 EAGLE</h5>
+                <p class="card-text">
+                  Performance NVIDIA GeForce, 8GB GDDR6, DLSS, Ray Tracing
+                </p>
+                <a href="#" class="btn btn-primary">Comprar Agora!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="card" style="width: 14rem">
+              <img
+                src="./public/img/img-gpu-4.jpg"
+                class="card-img-top"
+                alt="rx gpu"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Placa de Vídeo RX 7600 ASUS</h5>
+                <p class="card-text">
+                  Custo-Benefício e Performance Dual Radeon, 8GB GDDR6
+                </p>
+                <a
+                  href="https://www.kabum.com.br/produto/514535/placa-de-video-rx7600-asus-dual-radeon-8gb-gddr6-90yv0ih2-m0na00"
+                  class="btn btn-primary"
+                  >Comprar Agora!</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
