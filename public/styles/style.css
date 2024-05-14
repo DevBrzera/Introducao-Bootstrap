@@ -1,6 +1,8 @@
 :root {
     --btBlack: #000;
+    --btBlackFrenzy: #4b4c4d;
     --btGreen: #000;
+    --btWhite: #fff;
 }
 
 .carousel-item {
@@ -12,7 +14,7 @@
     object-fit: cover;  /* formata o tamanho original mantendo a modificação */
 }
 
-.navbar-brand img {
+.navbar-brand img, .footer img {
     height: 30px;
     margin: 0 0 0 5px;
 }
@@ -41,9 +43,76 @@
     margin: 0 15px 0 0;
 }
 
-.footer {
+/* .footer {
     background-color: #F8F9FA;
     display: flex;
     justify-content: space-around;
     align-items: center;
+} */
+
+.footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8f9fa;
+}
+
+.footer a, .footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--btBlack);
+}
+
+.footer, .rSociais {
+    text-align: center;
+    padding-top: 25px;
+    color: #4b4c4d;
+    /* background-color: var(--btblack); */
+}
+
+.footer .rSociais a{
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 50%;
+
+}
+
+.carousel-indicators li {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+  }
+
+.footer1 {
+    background-color: var(--btBlackFrenzy);
+    color: var(--btWhite);
+    font-weight: 400;
+}
+
+.infoFooter1 {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.infoFooter1 p, .infoFooter1 a {
+    margin: 0 10px 10px 10px;
+    color: var(--btWhite);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul, li {
+    list-style: none;
 }
