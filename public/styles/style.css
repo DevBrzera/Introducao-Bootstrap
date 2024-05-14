@@ -21,3 +21,29 @@
     height: 100%;
     object-fit: cover;  /* formata o tamanho original mantendo a modificação */
 }
+
+.carousel-control-prev {
+    background-color: var(--btBlack);
+    border-radius: 4px;
+    height: 12.25rem;
+    width: 5%;
+    top: 150px;
+    margin: 0 0 0 15px;
+    
+}
+
+.carousel-control-next {
+    background-color: var(--btBlack);
+    border-radius: 4px;
+    height: 12.25rem;
+    width: 5%;
+    top: 150px;
+    margin: 0 15px 0 0;
+}
+
+.footer {
+    background-color: #F8F9FA;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

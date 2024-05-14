@@ -9,6 +9,10 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./public/styles/style.css" />
     <title>Introdução Bootstrap</title>
   </head>
@@ -89,7 +93,7 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" style="margin: 0 0 80px 0">
         <div class="carousel-item active">
           <img
             src="https://cdn.dooca.store/2147/files/download.jpg"
@@ -162,11 +166,13 @@
     <div id="carouselCards1" class="carousel slide">
       <section class="pt-5 pb-10">
         <div class="container">
+          <!--  1° Carrossel de Cards -->
+
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
                 <div class="col-md-3">
-                  <div class="card" style="width: 14rem">
+                  <div class="card" style="width: 16rem">
                     <img
                       src="./public/img/img-amd-4.jpg"
                       class="card-img-top"
@@ -186,7 +192,7 @@
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card" style="width: 14rem">
+                  <div class="card" style="width: 16rem">
                     <img
                       src="./public/img/img-amd-2.jpg"
                       class="card-img-top"
@@ -196,7 +202,7 @@
                       <h5 class="card-title">Processador AMD Ryzen 5 5600</h5>
                       <p class="card-text">
                         Custo-Benefício 3.5GHz (4.4GHz Max Turbo), Cache 35MB,
-                        AM4
+                        AM4, Sem Vídeo
                       </p>
                       <a href="#" class="btn btn-primary">Comprar Agora!</a>
                     </div>
@@ -204,7 +210,7 @@
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card" style="width: 14rem">
+                  <div class="card" style="width: 16rem">
                     <img
                       src="./public/img/img-amd-3.jpg"
                       class="card-img-top"
@@ -222,7 +228,7 @@
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card" style="width: 14rem">
+                  <div class="card" style="width: 16rem">
                     <img
                       src="./public/img/img-amd-1.jpg"
                       class="card-img-top"
@@ -232,7 +238,95 @@
                       <h5 class="card-title">Processador AMD Ryzen 5 4600G</h5>
                       <p class="card-text">
                         Custo-Benefício 3.7GHz (4.2GHz Max Turbo), Cache 11MB,
-                        AM4
+                        AM4, Com Vídeo
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  2° Carrossel de Cards -->
+
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="./public/img/img-intel-1.jpg"
+                      class="card-img-top"
+                      alt="intel 3 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Processador Intel Core I3-14100F
+                      </h5>
+                      <p class="card-text">
+                        4-Core, 8-Threads, 3.5gHz (4.7gHz Turbo), Cache 12MB,
+                        LGA1700
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="./public/img/img-intel-2.jpg"
+                      class="card-img-top"
+                      alt="ryzen 5 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Processador Intel Core I9-14900K
+                      </h5>
+                      <p class="card-text">
+                        24-Core, 32-Threads, 3.2gHz (5.8gHz Turbo), Cache 36MB,
+                        LGA1700
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="./public/img/img-intel-3.jpg"
+                      class="card-img-top"
+                      alt="ryzen 5 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Processador Intel Core I5-14600K
+                      </h5>
+                      <p class="card-text">
+                        14-Core, 20-Threads, 3.5gHz (5.3gHz Turbo), Cache 24MB,
+                        LGA1700
+                      </p>
+                      <a href="#" class="btn btn-primary">Comprar Agora!</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card" style="width: 16rem">
+                    <img
+                      src="./public/img/img-intel-4.jpg"
+                      class="card-img-top"
+                      alt="ryzen 5 cpu"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        Processador Intel Core I7-13700F
+                      </h5>
+                      <p class="card-text">
+                        16-Core, 24-Threads, 2.1gHz (5.2gHz Turbo), Cache 24MB,
+                        LGA1700
                       </p>
                       <a href="#" class="btn btn-primary">Comprar Agora!</a>
                     </div>
@@ -281,7 +375,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3">
-            <div class="card" style="width: 14rem">
+            <div class="card" style="width: 16rem">
               <img
                 src="./public/img/img-gpu-1.jpg"
                 class="card-img-top"
@@ -291,14 +385,14 @@
                 <h5 class="card-title">
                   Placa de Vídeo RX 6600 CLD 8G ASRock AMD Radeon
                 </h5>
-                <p class="card-text">8GB, GDDR6 - 90-GA2RZZ-00UANF</p>
+                <p class="card-text">8GB, GDDR6</p>
                 <a href="#" class="btn btn-primary">Comprar Agora!</a>
               </div>
             </div>
           </div>
 
           <div class="col-md-3">
-            <div class="card" style="width: 14rem">
+            <div class="card" style="width: 16rem">
               <img
                 src="./public/img/img-gpu-2.jpg"
                 class="card-img-top"
@@ -315,7 +409,7 @@
           </div>
 
           <div class="col-md-3">
-            <div class="card" style="width: 14rem">
+            <div class="card" style="width: 16rem">
               <img
                 src="./public/img/img-gpu-3.jpg"
                 class="card-img-top"
@@ -332,7 +426,7 @@
           </div>
 
           <div class="col-md-3">
-            <div class="card" style="width: 14rem">
+            <div class="card" style="width: 16rem">
               <img
                 src="./public/img/img-gpu-4.jpg"
                 class="card-img-top"
@@ -346,12 +440,46 @@
                 <a
                   href="https://www.kabum.com.br/produto/514535/placa-de-video-rx7600-asus-dual-radeon-8gb-gddr6-90yv0ih2-m0na00"
                   class="btn btn-primary"
+                  target="_blank"
                   >Comprar Agora!</a
                 >
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Inicio Footer -->
+
+    <section class="footer">
+      <ul>
+        <li>
+          <span class="text-muted">
+            <a class="btn btn-sm btn-custom" href="#">
+              <i class="bi bi-person"></i> Sobre
+            </a>
+          </span>
+        </li>
+        <li>
+          <span class="text-muted">
+            <a class="btn btn-sm btn-custom" href="#">
+              <i class="bi bi-journal-check"></i> Termos
+            </a>
+          </span>
+        </li>
+      </ul>
+        <span class="text-muted">
+          <a class="btn btn-lg btn-custom" href="https://github.com/DevBrzera" target="_blank">
+            <i class="bi bi-github"></i> DevBrzera
+          </a>
+        </span>
+      </div>
+        <span class="text-muted">
+          <a class="btn btn-lg btn-custom" href="https://www.instagram.com/brzera_/" target="_blank">
+            <i class="bi bi-instagram"></i> brzera_
+          </a>
+        </span>
       </div>
     </section>
 
